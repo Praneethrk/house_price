@@ -1,0 +1,18 @@
+.btn{
+   
+    margin:auto;
+    display:block;
+   
+}
+
+.estimate{
+    margin:auto;
+    text-align: center;
+    display:block;
+    border-style: solid;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+h3{
+    color:#2d7cfa;
+}

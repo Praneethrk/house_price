@@ -1,0 +1,33 @@
+<div class="row mb-4">
+  <div class="col-md-6 mb-4">
+    <label>Select Location :</label>
+    <div class="input-group">
+      <select class="form-control mb-2" name="loc"  [(ngModel)]="loc">
+        <option value="">Select Location :</option>
+        <option *ngFor="let loc of location" value={{loc}}>{{loc}}</option>
+      </select>
+    </div>
+    <label>Select Square Feet :</label>
+    <div class="input-group">
+      
+      <input class="form-control" name="name" [(ngModel)]="sqft" type="text"
+        placeholder="Enter Square Feet">
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <label>Select BHK :</label>
+    <div class="input-group">
+      
+      <input class="form-control mb-2" [(ngModel)]="bhk" type="text" placeholder="Enter BHK">
+    </div>
+    <label>Select Bath :</label>
+    <div class="input-group">
+      
+      <input class="form-control" [(ngModel)]="bath" type="text" placeholder="Enter Bath">
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="submit()">Submit</button>
+</div>
+<div class="row estimate" *ngIf="estimate">
+    <h3>Estimated Price : {{price}}</h3>
+</div>
